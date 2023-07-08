@@ -1,0 +1,70 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+.container {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/*-----------HEADER----------*/
+
+.header  {
+    background-color: black
+}
+
+header .container {
+    padding: 0 28px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+
+.header-logo {
+    color: #FFF;
+        font-family: Open Sans;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42.24px;
+}
+
+.header-log-accent {
+    color: #28A745;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-item {}
+
+.header-link-accent {
+    color: #FFF;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28.16px;
+}
