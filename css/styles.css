@@ -112,3 +112,65 @@ background-color: #28A745;
 border-radius: 5px;
 
 }
+
+/* ----------about--------------- */
+.about {
+    
+}
+
+.about-container{
+    display: flex;
+}
+
+.about-piple {
+    width: 670px;
+    height: 460px;
+    flex-shrink: 0;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.about-img {
+}
+.about-solutions {
+    background: #28A745;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-right: 64px;
+}
+.about-subtitle {
+    color: #FFF;
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32.947px; /* 164.736% */
+margin-bottom: 24px;
+}
+.about-title {
+    color: #FFF;
+font-family: Open Sans;
+font-size: 38px;
+font-style: normal;
+font-weight: 300;
+line-height: 48px; /* 126.316% */
+margin-bottom: 24px;
+}
+.about-text {
+    color: #FFF;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28.16px; /* 156.444% */
+margin-bottom: 24px;
+}
+.about-link {
+    color: #FFF;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28.16px; /* 156.444% */
+padding: 11px 35px 12px 34px;
+border-radius: 5px;
+border: 1px solid #FFF;
+}
