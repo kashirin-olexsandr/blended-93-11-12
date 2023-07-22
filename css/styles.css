@@ -37,7 +37,15 @@ img {
 /*-----------HEADER----------*/
 
 .header {
-  background-color: rgb(201, 20, 20);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+  position: fixed;
+  /*width: 100%;*/
+  right: 0;
+  left: 0;
 }
 
 header .container {
@@ -72,17 +80,22 @@ header .container {
 }
 
 .header-link-accent {
+  display: block;
   color: #fff;
   font-family: Open Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.56;
+  padding: 20px 0;
 }
 /*-----------------------------Section1------------------*/
 
 .hero {
-  background-color: rgba(6, 184, 41, 0.7);
+  background-image: url(../images/rectangle.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 279px 0 282px 0;
 }
@@ -122,6 +135,7 @@ header .container {
 
 /* ----------about--------------- */
 .about {
+  background: #28a745;
 }
 
 .about-container {
@@ -180,6 +194,37 @@ header .container {
   border-radius: 5px;
   border: 1px solid #fff;
 }
+.about-subtitle {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.64;
+  margin-bottom: 24px;
+}
+.about-title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.26; /* 126.316% */
+  margin-bottom: 24px;
+}
+.about-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56; /* 156.444% */
+  margin-bottom: 24px;
+}
+.about-link {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56; /* 156.444% */
+  padding: 11px 35px 12px 34px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
 
 /* ----------cases--------------- */
 
@@ -221,4 +266,7 @@ header .container {
 .cases-item {
 }
 .cases-item-img {
+  padding-left: 20px;
+  padding-top: 80px;
+  padding-right: 64px;
 }
