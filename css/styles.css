@@ -270,3 +270,75 @@ header .container {
   padding-top: 80px;
   padding-right: 64px;
 }
+
+/*---------------------------------Team---------------------------------*/
+.team {
+  padding: 80px 28px;
+  right: 0;
+  left: 0;
+}
+
+
+.team-subtitle {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.64;
+}
+
+.team-title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.26;
+}
+
+.team-text {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.56;
+}
+
+.team-list {
+  display: flex;
+  gap: 19px;
+}
+
+.team-item {
+  color: #333;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.26;
+    width: calc((100% - 48px) / 3);
+      max-width: 420px;
+}
+.team-img{
+  margin-bottom: 20px;
+}
+
+.team-container-overflow {}
+
+.team-list-svg {
+  display: flex;
+}
+
+.team-item-svg {}
+
+.overfloy-svg {}
+
+.team-name {
+  margin-bottom: 20px;
+}
+
+.team-position {
+  margin-bottom: 12px;
+}
