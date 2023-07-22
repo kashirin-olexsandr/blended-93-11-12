@@ -30,7 +30,13 @@ img{
 /*-----------HEADER----------*/
 
 .header  {
-    background-color: black
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    position: fixed;
+    /*width: 100%;*/
+    right: 0;
+    left: 0;
+    
+
 }
 
 header .container {
@@ -64,16 +70,21 @@ align-items: center;
 .header-item {}
 
 .header-link-accent {
+    display: block;
     color: #FFF;
         font-family: Open Sans;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 1.56;
+        padding: 20px 0;
 }
 /*-----------------------------Section1------------------*/
 
 .hero {
+    background-image: url(../images/rectangle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, .7);
     text-align: center;
     padding: 279px 0 282px 0;
@@ -115,7 +126,7 @@ border-radius: 5px;
 
 /* ----------about--------------- */
 .about {
-    
+    background: #28A745; 
 }
 
 .about-container{
@@ -131,45 +142,38 @@ border-radius: 5px;
 .about-img {
 }
 .about-solutions {
-    background: #28A745;
+    
     padding-left: 20px;
     padding-top: 80px;
     padding-right: 64px;
 }
 .about-subtitle {
     color: #FFF;
-font-family: Open Sans;
 font-size: 20px;
-font-style: normal;
 font-weight: 400;
-line-height: 32.947px; /* 164.736% */
+line-height: 1.64; 
 margin-bottom: 24px;
 }
 .about-title {
     color: #FFF;
-font-family: Open Sans;
 font-size: 38px;
-font-style: normal;
 font-weight: 300;
-line-height: 48px; /* 126.316% */
+line-height: 1.26; /* 126.316% */
 margin-bottom: 24px;
 }
 .about-text {
     color: #FFF;
-font-family: Open Sans;
 font-size: 18px;
-font-style: normal;
 font-weight: 400;
-line-height: 28.16px; /* 156.444% */
+line-height: 1.56; /* 156.444% */
 margin-bottom: 24px;
 }
 .about-link {
+    display: inline-block;
     color: #FFF;
-font-family: Open Sans;
 font-size: 18px;
-font-style: normal;
 font-weight: 400;
-line-height: 28.16px; /* 156.444% */
+line-height: 1.56; /* 156.444% */
 padding: 11px 35px 12px 34px;
 border-radius: 5px;
 border: 1px solid #FFF;
