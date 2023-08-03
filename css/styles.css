@@ -21,12 +21,13 @@ img {
   display: block;
   max-width: 100%;
 }
-input{
+input {
   font-family: inherit;
 }
 .container {
   width: 1360px;
   margin: 0 auto;
+  /* border: 1px solid red; */
 }
 
 .list {
@@ -276,111 +277,105 @@ header .container {
 
 /*---------------------------------Team---------------------------------*/
 .team {
-  padding: 80px 28px;
+  padding: 80px 0;
   right: 0;
   left: 0;
 }
-
-
+.team .container {
+  padding: 0 28px;
+}
 .team-subtitle {
   text-align: center;
   margin-bottom: 24px;
   color: #333;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.64;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.64;
 }
-
 .team-title {
   text-align: center;
   margin-bottom: 24px;
   color: #333;
-    font-size: 38px;
-    font-weight: 300;
-    line-height: 1.26;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.26;
 }
-
 .team-text {
   text-align: center;
   margin-bottom: 24px;
   color: #333;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.56;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
 }
-
 .team-list {
   display: flex;
-  gap: 19px;
+  gap: 20px;
 }
-
 .team-item {
   color: #333;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 1.26;
-    width: calc((100% - 48px) / 3);
-      max-width: 420px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.26;
+  width: calc((100% - 40px) / 3);
 }
-.team-img{
-  margin-bottom: 20px;
-}
-
 .team-container-overflow {
+  position: relative;
+  overflow: hidden;
 }
-
 .team-list-svg {
-
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team-item-svg {
-
-}
-.team-link-svg{
+.team-container-overflow:hover .team-list-svg,
+.team-container-overflow:focus .team-list-svg {
+  transform: translateY(0%);
 }
 
 .overfloy-svg {
-    max-width: 35px;
-    width: 100%;
-    height: 100%;
-    fill: #28a745;
+  max-width: 35px;
+  width: 100%;
+  height: 100%;
+  fill: #fff;
 }
-
-.team-name {
-  margin-bottom: 20px;
-}
-
-.team-position {
-  margin-bottom: 12px;
+.container-team-name {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
 }
 /*---------------------Section-form---------------------*/
 .section-form {
 }
 
-.container-form{
+.container-form {
   display: flex;
-  
-  
-
 }
 
-.img-fo-form {}
+.img-fo-form {
+}
 
 .form {
-  padding: 80px 28px 20px ;
+  padding: 80px 28px 20px;
   width: 690px;
-  min-height: 454px ;
-  background-color: #F4F4F4;;
-  
+  min-height: 454px;
+  background-color: #f4f4f4;
 }
-.form-text{
+.form-text {
   color: #333;
-    font-size: 38px;
-    font-weight: 300;
-    line-height: 1.26;
-
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.26;
 }
 
 .form-input {
@@ -390,36 +385,34 @@ header .container {
   margin-top: 32px;
   padding: 10px 0 1px 8px;
 }
-.form-input::placeholder{
+.form-input::placeholder {
   color: #808080;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.56;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
 }
 
 .form-btn {
   margin-top: 60px;
-    background: #28A745;
-    padding: 8px 295px  ;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background: #28a745;
+  padding: 8px 295px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.form-btn:is(:hover, :focus){
-  background:#23943d;
+.form-btn:is(:hover, :focus) {
+  background: #23943d;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16),
-      0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 /*-----------------------------------Footer----------------------------------*/
 .footer {
   padding: 20px 0;
   background: #333;
 }
-.footer-list{
+.footer-list {
   display: flex;
   gap: 25px;
   justify-content: center;
@@ -431,19 +424,19 @@ header .container {
 .footer-svg {
   fill: #fff;
 }
-.footer-svg:hover{
-  fill: #28A745;
+.footer-svg:hover {
+  fill: #28a745;
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-link:focus + .footer-svg{
-    fill: #28A745;
-      transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+.footer-link:focus + .footer-svg {
+  fill: #28a745;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-text{
-  color: #FFF;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.56;
+.footer-text {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
 }
