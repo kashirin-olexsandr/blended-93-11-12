@@ -341,7 +341,6 @@ header .container {
 .team-container-overflow:focus .team-list-svg {
   transform: translateY(0%);
 }
-
 .overfloy-svg {
   max-width: 35px;
   width: 100%;
@@ -353,6 +352,24 @@ header .container {
   flex-direction: column;
   gap: 12px;
   margin-top: 20px;
+}
+.team-name {
+  color: #333;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27;
+}
+.team-position{
+  color: #333;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27;
 }
 /*---------------------Section-form---------------------*/
 .section-form {
